@@ -9,7 +9,7 @@ buttons.forEach(btn => {
 
 async function fetchMovie(movieName){
     movieContainer.innerHTML= '<h2>Loading.....</h2>'
-    let url = ` http://www.omdbapi.com/?s=${movieName}&apikey=4bf3e28a`
+    let url = ` https://www.omdbapi.com/?s=${movieName}&apikey=4bf3e28a`
     const response = await fetch(url)
     const data = await response.json();
     displayMovie(data.Search)
@@ -32,7 +32,7 @@ function displayMovie(movies){
 }
 
 async function getMovie(movieName){
-    let url = ` http://www.omdbapi.com/?t=${movieName}&apikey=4bf3e28a`;
+    let url = ` https://www.omdbapi.com/?t=${movieName}&apikey=4bf3e28a`;
     try{
     let response = await fetch(url)
     let data = await response.json()
