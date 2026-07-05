@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Welcome to Movie Finder!</h1>
+    <div class="container">
+    <section class="search-bar">
+        <h3>Enter the movie name to find the movie</h3>
+        <div class="search-control"><input type="search" id="search" placeholder="Enter the Movie name to search...." >
+    <button class="btnSearch" onclick="HandleSearch()">Search</button></div>
+    </section>
+    <div id="movie-search"></div>
+
+    <section class="button">
+    <h3>Select your Mood to find the movies accprding to your mood</h3>
+    <div class="btn-mood">
+    <button class="mood" data-mood="comedy">Happy</button>
+    <button class="mood" data-mood="drama">Sad</button>
+    <button class="mood" data-mood="action">Excited</button>
+    <button class="mood" data-mood="romance">Romance</button>
+    <button class="mood" data-mood="horror">Scared</button>
+    </div>
+    
+    </section>
+    <div id="movie-container"></div>
+    <section class="category">
+        <h3>Select the category of the movie</h3>
+    <input type="text" id="category" list="movie" placeholder="Enter the movie category...">
+    <datalist id="movie">
+        <option value="Action"></option>
+        <option value="Comedy"></option>
+        <option value="Drama"></option>
+        <option value="Horror"></option>
+        <option value="Romance"></option>
+        <option value="Science Fiction"></option>
+    </datalist>
+    </section>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
